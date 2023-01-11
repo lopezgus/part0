@@ -1,0 +1,15 @@
+Title Exercise 6
+
+
+note over browser:
+{"content": "texto Tavo31", date": "2023-01-10T15:47:35.376Z"}
+end note
+browser->server: JSON POST https://studies.cs.helsinki.fi/exampleapp/new_note_sp
+
+server-->browser: Code 201 JSON "message": "note created"
+
+note over browser:  
+browser executes the event handler
+that renders notes to display
+end notetitle Untitled
+
